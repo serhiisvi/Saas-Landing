@@ -1,4 +1,5 @@
-@import url('https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /* SemiBold - 600
    Regular - 400 */
@@ -14,11 +15,13 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #2b2b2b;
-  max-width: 1400px;
+  max-width: 2000px;
 }
 
-main {
-  margin: 0 auto;
+.main {
+  max-width: 2000px;
+  margin: 0 auto; /* центрирует по горизонтали */
+  padding: 0 20px; /* отступы по бокам на маленьких экранах */
 }
 
 img {
@@ -36,12 +39,12 @@ h1, h2 {
   color: #fff;
 }
 
-.par-bold, .par-review {
+.p-bold, .p-review {
   font-weight: 600;
   color: gray;
 }
 
-.par-norm, .par-name, .text-p {
+.p-norm, .p-name, .text-p {
   font-weight: 400;
   color: gray;
 }
@@ -49,6 +52,7 @@ h1, h2 {
 
 .header {
   padding: 10px;
+  max-width: 2000px;
 }
 
 .cap-wrapper {
@@ -57,7 +61,7 @@ h1, h2 {
   display: flex;
   align-items: center;
   height: 100px;
-  max-width: 1400px;
+  max-width: 2000px;
 }
 
 .logo {
@@ -76,7 +80,7 @@ h1, h2 {
   font-size: 400;
 }
 
-.button-purp {
+.button-purple {
   width: 155px;
   height: 50px;
   border: none;
@@ -84,10 +88,12 @@ h1, h2 {
   background-color: #BFAFF2;
 }
 
-.sec-welc {
+.section-welcome {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .container {
@@ -120,7 +126,6 @@ h1, h2 {
 
 .text-h {
   line-height: 80px;
-  word-spacing: 5px;
   font-size: 60px;
   height: 166px;
   max-width: 466px;
@@ -141,9 +146,15 @@ h1, h2 {
   font-size: 17px;
 }
 
+.section-logo {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-logo {
   height: 170px;
-  max-width: 1400px;
+  max-width: 2000px;
   border-top: 1px solid #545352;
   border-bottom: 1px solid #545352;
   margin-left: 95px;
@@ -153,16 +164,18 @@ h1, h2 {
   align-items: center;
 }
 
-.logo-comp {
+.logo-company {
   max-width: 931px;
   height: 35px;
 }
 
-.sec-wall-info {
+.section-wallet-info {
+  width: 100%;
   padding: 110px 25px;
   height: 700px;
   display: flex;
   justify-content: center;
+  margin-bottom: 35px;
 }
 
 .container-wallet-info {
@@ -172,11 +185,8 @@ h1, h2 {
   border-radius: 15px;
 }
 
-.sec-wall-info {
-  margin-bottom: 35px;
-}
-
-.sec-details {
+.section-details {
+  width: 100%;
   height: 348px;
 }
 
@@ -204,7 +214,7 @@ h1, h2 {
   align-items: center;
 }
 
-.par-bold-cards {
+.p-bold-cards {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 1px;
@@ -213,7 +223,7 @@ h1, h2 {
   padding-right: 30px;
 }
 
-.par-norm-cards{
+.p-normal-cards{
   font-size: 16px;
   color: gray;
   line-height: 1.6;
@@ -221,8 +231,8 @@ h1, h2 {
   padding-right: 50px;
 }
 
-.sec-review {
-  max-width: auto;
+.section-review {
+  width: 100%;
   height: 520px;
   padding: 0 20px;
 }
@@ -243,7 +253,7 @@ h1, h2 {
   vertical-align: middle; /* выравнивание по вертикали */
 }
 
-.par-review {
+.p-review {
   font-size: 22px;
   color: #383736;
   line-height: 1.6;
@@ -253,7 +263,7 @@ h1, h2 {
   margin-right: 210px;
 }
 
-.par-name {
+.p-name {
   font-size: 20px;
   color: gray;
   margin: 0;
@@ -263,9 +273,10 @@ h1, h2 {
   width: 17px;
   height: 17px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 
-.par-name, .stars {
+.p-name, .stars {
   display: block;
 }
 
@@ -275,10 +286,12 @@ h1, h2 {
   margin-left: 13px;
 }
 
-.sec-quest {
+.section-quest {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .container-cardholder {
@@ -317,7 +330,7 @@ h1, h2 {
   margin-left: 70px;
   margin-right: 70px;
   height: 210px;
-  max-width: 1400px;
+  max-width: 2000px;
   border-top: 1px solid #545352;
 }
 
@@ -327,7 +340,7 @@ h1, h2 {
   margin-top: 50px;
 }
 
-.logo-foot {
+.logo-footer {
   margin-right: auto;
   text-decoration: none;
   color: #fff;
@@ -336,16 +349,16 @@ h1, h2 {
   font-size: 26px; 
 }
 
-.footer-nav-col {
+.footer-nav-column {
   margin-top: 71px;
   margin-left: 12px;
   width: 600px;
 }
 
 .footer__nav-link {
-  margin-right: 15px;
-  margin-left: 15px;
-  font-size: 18px;
+  margin-right: 13px;
+  margin-left: 13px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -356,7 +369,7 @@ h1, h2 {
   margin-bottom: 15px;  
 }
 
-.foot-input {
+.footer-input {
   width: 300px;
   height: 50px;
   background-color: rgba(51, 51, 51, 1);
